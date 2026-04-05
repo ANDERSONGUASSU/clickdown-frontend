@@ -7,14 +7,7 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  SearchIcon,
-  Logo,
-} from "@/components/icons";
+
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +16,7 @@ export const Navbar = () => {
     <TextField aria-label="Search" type="search">
       <InputGroup>
         <InputGroup.Prefix>
-          <SearchIcon className="text-base text-muted pointer-events-none flex-shrink-0" />
+         
         </InputGroup.Prefix>
         <InputGroup.Input className="text-sm" placeholder="Search..." />
         <InputGroup.Suffix>
@@ -41,7 +34,6 @@ export const Navbar = () => {
       <header className="mx-auto flex h-16 max-w-[1280px] items-center justify-between gap-4 px-6">
         <div className="flex items-center gap-4">
           <NextLink className="flex items-center gap-1" href="/">
-            <Logo />
             <p className="font-bold text-inherit">ACME</p>
           </NextLink>
           <ul className="hidden lg:flex gap-4 ml-2">
@@ -64,19 +56,15 @@ export const Navbar = () => {
         <div className="hidden sm:flex items-center gap-2">
           <Link
             aria-label="Twitter"
-            href={siteConfig.links.twitter}
             rel="noopener noreferrer"
             target="_blank"
           >
-            <TwitterIcon className="text-muted" />
           </Link>
           <Link
             aria-label="Discord"
-            href={siteConfig.links.discord}
             rel="noopener noreferrer"
             target="_blank"
           >
-            <DiscordIcon className="text-muted" />
           </Link>
           <Link
             aria-label="Github"
@@ -84,7 +72,6 @@ export const Navbar = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <GithubIcon className="text-muted" />
           </Link>
           <ThemeSwitch />
           <div className="hidden lg:flex">{searchInput}</div>
@@ -92,9 +79,8 @@ export const Navbar = () => {
             <Button
               className="text-sm font-normal"
               variant="tertiary"
-              onPress={() => window.open(siteConfig.links.sponsor, "_blank")}
+             
             >
-              <HeartFilledIcon className="text-danger" />
               Sponsor
             </Button>
           </div>
@@ -107,7 +93,6 @@ export const Navbar = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <GithubIcon className="text-muted" />
           </Link>
           <ThemeSwitch />
           <button
