@@ -12,6 +12,8 @@ This is a template for creating applications using Next.js 15 (app directory) an
 - [Tailwind Variants](https://tailwind-variants.org)
 - [TypeScript](https://www.typescriptlang.org/)
 - [next-themes](https://github.com/pacocoursey/next-themes)
+- [framer-motion](https://motion.dev/docs/react)
+- [react-icons](https://react-icons.github.io/react-icons/)
 
 ## How to Use
 
