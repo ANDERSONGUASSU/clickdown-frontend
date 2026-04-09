@@ -1,0 +1,38 @@
+export const themeConfig = {
+  light: {
+    background: "slate-50",
+    foreground: "gray-800",
+    muted: "gray-500",
+    primary: "blue-600",
+    primaryHover: "blue-700",
+    border: "gray-200",
+    borderHover: "gray-300",
+    accent: "blue-600",
+    error: "rose-600",
+    errorForeground: "rose-700",
+    card: "white",
+    cardMuted: "gray-100",
+    input: "white",
+    inputBorder: "gray-300",
+    divider: "gray-200",
+  },
+  dark: {
+    background: "gray-950",
+    foreground: "gray-100",
+    muted: "gray-400",
+    primary: "blue-500",
+    primaryHover: "blue-600",
+    border: "gray-700",
+    borderHover: "gray-600",
+    accent: "blue-400",
+    error: "rose-500",
+    errorForeground: "rose-400",
+    card: "gray-900",
+    cardMuted: "gray-800",
+    input: "gray-900",
+    inputBorder: "gray-700",
+    divider: "gray-700",
+  },
+} as const;
+
+export type ThemeColors = typeof themeConfig.light;

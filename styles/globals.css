@@ -6,4 +6,73 @@
 @theme {
 	--font-sans: "font", sans-serif;
 	--font-mono: "monospace", monospace;
+
+	/* Cores Light */
+	--color-background: var(--color-slate-50);
+	--color-foreground: var(--color-gray-800);
+	--color-muted: var(--color-gray-500);
+	--color-primary: var(--color-blue-600);
+	--color-primary-hover: var(--color-blue-700);
+	--color-border: var(--color-gray-200);
+	--color-border-hover: var(--color-gray-300);
+	--color-card: white;
+	--color-card-muted: var(--color-gray-100);
+	--color-input: white;
+	--color-input-border: var(--color-gray-300);
+	--color-divider: var(--color-gray-200);
+	--color-error: var(--color-rose-600);
+	--color-error-foreground: var(--color-rose-700);
+
+	/* Cores Dark */
+	--color-dark-background: var(--color-gray-950);
+	--color-dark-foreground: var(--color-gray-100);
+	--color-dark-muted: var(--color-gray-400);
+	--color-dark-primary: var(--color-blue-500);
+	--color-dark-primary-hover: var(--color-blue-600);
+	--color-dark-border: var(--color-gray-700);
+	--color-dark-border-hover: var(--color-gray-600);
+	--color-dark-card: var(--color-gray-900);
+	--color-dark-card-muted: var(--color-gray-800);
+	--color-dark-input: var(--color-gray-900);
+	--color-dark-input-border: var(--color-gray-700);
+	--color-dark-divider: var(--color-gray-700);
+	--color-dark-error: var(--color-rose-500);
+	--color-dark-error-foreground: var(--color-rose-400);
 }
+
+/* Classe utilitária para aplicar cores do tema */
+.theme-bg { background-color: var(--color-background); }
+.theme-bg-dark { background-color: var(--color-dark-background); }
+.theme-fg { color: var(--color-foreground); }
+.theme-fg-dark { color: var(--color-dark-foreground); }
+.theme-muted { color: var(--color-muted); }
+.theme-muted-dark { color: var(--color-dark-muted); }
+.theme-border { border-color: var(--color-border); }
+.theme-border-dark { border-color: var(--color-dark-border); }
+.theme-card { background-color: var(--color-card); }
+.theme-card-dark { background-color: var(--color-dark-card); }
+.theme-card-muted { background-color: var(--color-card-muted); }
+.theme-card-muted-dark { background-color: var(--color-dark-card-muted); }
+.theme-input { background-color: var(--color-input); }
+.theme-input-dark { background-color: var(--color-dark-input); }
+.theme-input-border { border-color: var(--color-input-border); }
+.theme-input-border-dark { border-color: var(--color-dark-input-border); }
+.theme-divider { background-color: var(--color-divider); }
+.theme-divider-dark { background-color: var(--color-dark-divider); }
+.theme-error { color: var(--color-error); }
+.theme-error-dark { color: var(--color-dark-error); }
+.theme-error-fg { color: var(--color-error-foreground); }
+.theme-error-fg-dark { color: var(--color-dark-error-foreground); }
+
+/* Dark mode variants */
+.dark .theme-bg { background-color: var(--color-dark-background); }
+.dark .theme-fg { color: var(--color-dark-foreground); }
+.dark .theme-muted { color: var(--color-dark-muted); }
+.dark .theme-border { border-color: var(--color-dark-border); }
+.dark .theme-card { background-color: var(--color-dark-card); }
+.dark .theme-card-muted { background-color: var(--color-dark-card-muted); }
+.dark .theme-input { background-color: var(--color-dark-input); }
+.dark .theme-input-border { border-color: var(--color-dark-input-border); }
+.dark .theme-divider { background-color: var(--color-dark-divider); }
+.dark .theme-error { color: var(--color-dark-error); }
+.dark .theme-error-fg { color: var(--color-dark-error-foreground); }
